@@ -3,53 +3,66 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Basic Portfolio</title>
+    <title>Bootstrap Portfolio</title>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css"> -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
 <body>
-    <div class="header container-fluid">
-        <div  class ="row" id="navbar">
-            <h1 class="col-md-4 text-center">Dariell Vasquez</h1>
-            <a class="col-md-2 text-center" href="#about" id="abt">About</a>
-            <a class="col-md-2 text-center" href="contact.html" target="_blank" id="cont">Contact</a>
-            <a class="col-md-2 text-center" href="portfolio.html" target="_blank">Portfolio</a>
-        </div>
-        
-    </div>
-    <div class="main" class="clearfix">
-        <div id="about" class="clearfix">
-            <h1>About me</h1>
-            <img src="assets/images/my-photo.jpg" alt="Picture of me" />
-            <p>I'm glad you made it to my portfolio. It's a work in progress so check back every now and then for some new shiny toys I'll have in store. I recently graduated from Montclair State University with a BA in Italian. I have experience with web development, advertisements, kids, and teaching. Currently, I work at DoubleVerify as a Classification Analyst to make sure companies aren't marketing and advertising on non-brand-safe material/websites. I'm also catapulting my love for learning langauges into a more fulfilling career in tech. I'm propelling my programming knowledge to the next level at Rutger's Coding bootcamp, with the intent to become a Full-Stack Web Developer by the end of the program.
-            </p>
-            <p>When I'm not working or coding, I like to stay active by longboarding, walking on nature trails by my house, or going to the gym. When I'm feeling lazy, I like to play video games, hang out with friends, or research the latest tech news and technologies.
-            </p>
-        </div>
-        <aside class="clearfix">
-            <h2><span>Connect with Me</span></h2>
-            <div class="connect">
-                <a href="https://github.com/Dquez" target="_blank"><img src="assets/images/github.png" alt="Github"/></a>
-                <a href="https://www.linkedin.com/in/dariellvasquez7/" target="_blank"><img src="assets/images/linkedin.svg" alt="Linkedin"/></a>
-                <a href="https://www.instagram.com/dariellv/" target="_blank"><img src="assets/images/insta.png" alt="Instagram"/></a>
-                <a href="mailto:dariellv@yahoo.com" target="_blank"><img src="assets/images/iconmonstr-email-4-icon-27.png" alt="Email"/></a>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header" id="my-name">
+                <p class="navbar-brand">Dariell Vasquez</p>
             </div>
-        </aside>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about"><span class="navup">About</span></a></li>
+                    <li><a href="contact.html" target="_blank"><span class="navup">Portfolio</span></a></li>
+                    <li><a href="portfolio.html" target="_blank">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="page-header main">
+        <h1>About Me</h1>
     </div>
-    <div class="footer">
+    <div class="row container container-fluid">
+        <div class="col-md-10">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="col-md-6">
+                        <img src="assets/images/my-photo.jpg" alt="Picture of me" class="img-thumbnail" width="80%" height="80%">
+                    </div>
+                    <div class="col-md-6 row" id="about">
+                        <p>
+                            I'm glad you made it to my portfolio. It's a work in progress so check back every now and then for some new shiny toys I'll have in store. I recently graduated from Montclair State University with a BA in Italian. I have experience with web development, advertisements, kids, and teaching. Currently, I work at DoubleVerify as a Classification Analyst to make sure companies aren't marketing and advertising on non-brand-safe material/websites. I'm also catapulting my love for learning langauges into a more fulfilling career in tech. I'm propelling my programming knowledge to the next level at Rutger's Coding bootcamp, with the intent to become a Full-Stack Web Developer by the end of the program.
+                        </p>
+                        <p>
+                            When I'm not working or coding, I like to stay active by longboarding, walking on nature trails by my house, or going to the gym. When I'm feeling lazy, I like to play video games, hang out with friends, or research the latest tech news and technologies.
+                        </p>
+                </div>
+            </div>
+            <div class="row col-md-3  content">
+                <div class="col-sm-12 col-md-offset-3 sidenav">
+                <h4 class="container">Connect with Me</h4>
+                <ul class="nav">
+                    <li class="col-xs-5"><a href="https://github.com/Dquez" target="_blank"><img src="assets/images/github.png" alt="Github" class="img-rounded" width="40" height="40"></a></li>
+                    <li class="col-xs-5"><a href="https://www.linkedin.com/in/dariellvasquez7/" target="_blank"><img src="assets/images/linkedin.svg" alt="Linkedin" class="img-rounded" width="40" height="40"></a></li>
+                    <li class="col-xs-5"><a href="https://www.instagram.com/dariellv/" target="_blank"><img src="assets/images/insta.png" alt="Instagram" class="img-rounded" width="40" height="40"></a></li>
+                    <li class="col-xs-5"><a href="mailto:dariellv@yahoo.com" target="_blank"><img src="assets/images/iconmonstr-email-4-icon-27.png" alt="Email" width="40" height="40"></a></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="footer text-center">
         <p>&copy;Copyright Dariell Vasquez</p>
     </div>
 </body>
 
 </html>
-
-
-
-
-
-
 <!--#navbar {
     position: relative;
     left: -20%;
@@ -60,6 +73,9 @@
     word-spacing: 2em;
     padding: 2em;
 }
+
+
+col-sm-offset-2
 
 #navbar a {
     text-decoration: none;
