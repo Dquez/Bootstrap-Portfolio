@@ -60,6 +60,10 @@ div.row.container.container-fluid {
     color:#fff;
 }
 
+h4.container {
+    color:rgb(0,174,167);
+}
+
 img.img-thumbnail {
     float:right;
 }

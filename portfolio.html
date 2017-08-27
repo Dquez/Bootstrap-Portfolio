@@ -2,66 +2,503 @@
 <html lang="en-us">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Basic Portfolio</title>
-  <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
-  <link rel="stylesheet" type="text/css" href="assets/css/portfolio-style.css">
+    <meta charset="UTF-8">
+    <title>Bootstrap Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/portfolio-style.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
 <body>
-
-<div class="header">
-	<div id="navbar">
-		<a href="index.html" target="_blank" id="abt">About</a>
-		<a href="contact.html" target="_blank" id="cont">Contact</a>
-		<a href="portfolio.html" target="_blank">Portfolio</a>
-	</div>
-
-	<div class="name"><h1>Dariell Vasquez</h1></div>
-</div>
-<div class="main">
-	<div id="portfolio">
-		<h1>Portfolio</h1>
-		<ul>
-      		<li>
-        		<a href="https://dquez.github.io/elon-musk-tribute/" target="_blank"><img src="http://res.cloudinary.com/dquez/image/upload/v1491532775/Screen_Shot_2017-04-06_at_10.37.40_PM_dwapfy.png" alt="Tribute page thumbnail"></a>
-        		<div class="banner"><h3 id="elon">Bootstrap tribute page</h3></div>
-      		</li>
-      		<li>
-	        	<a href="http://dariell-vasquez.com/" target="_blank"><img src="http://res.cloudinary.com/dquez/image/upload/v1491532565/Screen_Shot_2017-04-06_at_10.21.42_PM_tmr5fv.png" alt="Personal Website"></a>
-	        	<div class="banner"><h3 id="personal-web">Personal Website</h3></div>
-		    </li>
-		    <li>
-		        <a href="https://dquez.github.io/google-homepage/" target="_blank"><img src="http://res.cloudinary.com/dquez/image/upload/v1491533159/Screen_Shot_2017-04-06_at_10.45.33_PM_qmnern.png" alt="Google Homepage"> </a>
-		        <div class="banner"><h3 id="google">Google Homepage remake</h3></div>
-		    </li>
-		    <li>
-		        <a href="https://dquez.github.io/portfolio/" target="_blank"><img src="http://res.cloudinary.com/dquez/image/upload/v1503115077/Screen_Shot_2017-08-18_at_11.56.29_PM_jeasbm.png" alt="My first portfolio"> </a>
-		        <div class="banner"><h3 id="original-port">Other Portfolio</h3></div>
-		    </li>
-		</ul>
-	</div>
-	<aside class="clearfix">
-		<h2><span>Connect with Me</span></h2>
-		<div class="connect">
-		<a href="https://github.com/Dquez" target="_blank"><img src="assets/images/github.png" alt="Github"/></a>
-		<a href="https://www.linkedin.com/in/dariellvasquez7/" target="_blank"><img src="assets/images/linkedin.svg" alt="Linkedin"/></a>
-		<a href="https://www.instagram.com/dariellv/" target="_blank"><img src="assets/images/insta.png" alt="Instagram"/></a>
-		<a href="mailto:dariellv@yahoo.com" target="_blank"><img src="assets/images/iconmonstr-email-4-icon-27.png" alt="Email"/></a>
-		</div>
-	</aside>
-</div>
-	
-<div class="footer">
-	<p>&copy;Copyright Dariell Vasquez</p>
-</div>
-
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header" id="my-name">
+                <p class="navbar-brand">Dariell Vasquez</p>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="contact.html" target="_blank">Contact</a></li>
+                    <li><a href="portfolio.html" target="_blank">Portfolio</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="page-header main">
+        <h1>Portfolio</h1>
+    </div>
+    <div class="row container container-fluid">
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-2">
+                    <div class="col-md-12 row" id="about">
+                                <ul class="nav row">
+                                    <li class="col-sm-6"><a href="https://dquez.github.io/elon-musk-tribute/" target="_blank"><img src="http://res.cloudinary.com/dquez/image/upload/v1491532775/Screen_Shot_2017-04-06_at_10.37.40_PM_dwapfy.png" alt="Tribute page thumbnail" class="img-rounded"></a></li>
+                                    <li class="col-sm-6"><a href="http://dariell-vasquez.com/"><img src="http://res.cloudinary.com/dquez/image/upload/v1491532565/Screen_Shot_2017-04-06_at_10.21.42_PM_tmr5fv.png" alt="Personal Website"></a></li>
+                                    <li class="col-sm-6 "><a href="https://dquez.github.io/google-homepage/" target="_blank"><img src="http://res.cloudinary.com/dquez/image/upload/v1491533159/Screen_Shot_2017-04-06_at_10.45.33_PM_qmnern.png" alt="Google Homepage"></a></li>
+                                    <li class="col-sm-6"><a href="https://dquez.github.io/portfolio/" target="_blank"><img src="http://res.cloudinary.com/dquez/image/upload/v1503115077/Screen_Shot_2017-08-18_at_11.56.29_PM_jeasbm.png" alt="Portfolio"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="row col-md-3  content">
+                        <div class="col-md-12 sidenav">
+                            <h4 class="container">Connect with Me</h4>
+                            <ul class="nav">
+                                <li class="col-xs-5"><a href="https://github.com/Dquez" target="_blank"><img src="assets/images/github.png" alt="Github" class="img-rounded" width="40" height="40"></a></li>
+                                <li class="col-xs-5"><a href="https://www.linkedin.com/in/dariellvasquez7/" target="_blank"><img src="assets/images/linkedin.svg" alt="Linkedin" class="img-rounded" width="40" height="40"></a></li>
+                                <li class="col-xs-5"><a href="https://www.instagram.com/dariellv/" target="_blank"><img src="assets/images/insta.png" alt="Instagram" class="img-rounded" width="40" height="40"></a></li>
+                                <li class="col-xs-5"><a href="mailto:dariellv@yahoo.com" target="_blank"><img src="assets/images/iconmonstr-email-4-icon-27.png" alt="Email" width="40" height="40"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        <div class="footer text-center">
+            <p>&copy;Copyright Dariell Vasquez</p>
+        </div>
 </body>
 
 </html>
 
 
+<!-- 
+
+/* HEADER AREA */
+
+#navbar {
+    position: relative;
+    left: -20%;
+    font-family: Arial;
+    font-size: .8em;
+    color: rgba(255, 255, 255, 0.5);
+    float: right;
+    word-spacing: 2em;
+    padding: 2em;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#navbar a:hover {
+    text-decoration: underline;
+}
+
+
+#abt,
+#cont {
+    padding-right: 2em;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.name {
+    background-color: rgb(0, 174, 167);
+    width: 180px;
+    height: 65px;
+    position: relative;
+    left: 100px;
+    font-size: 1.2em;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border-color: #cccccc;
+}
+
+.name h1 {
+    padding-top: 1em;
+}
 
 
 
 
+
+/* MAIN CONTENT */
+
+.main {
+    background-color: rgb(235, 235, 235);
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    height: 100%;
+}
+
+#portfolio {
+    width: 410px;
+    background-color: rgb(255, 255, 255);
+    padding: 18px;
+    position: relative;
+    left: 100px;
+    top: 25px;
+    overflow: auto;
+}
+
+#portfolio h1 {
+    font-weight: 600;
+    font-size: 1.2em;
+    color: rgb(0, 174, 167);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 22px;
+}
+
+#portfolio img {
+    height: 142px;
+    width: 188px;
+    margin-top: 20px;
+}
+
+li {
+    float: left;
+}
+
+
+#elon,
+#personal-web,
+#google,
+#original-port {
+    background-color: rgb(0, 174, 167);
+    width: 188px;
+    height: 30px;
+    font-size: 1em;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border-color: #cccccc;
+}
+
+.banner #elon {
+    margin-right: 34px;
+}
+
+.banner #google {
+    margin-right: 34px;
+}
+
+.banner {
+    position: relative;
+    top: -40px;
+}
+
+.banner h3 {
+    padding-top: 10px;
+}
+
+
+
+
+/* SIDE BAR/SOCIAL MEDIA */
+
+aside {
+    background-color: rgb(255, 255, 255);
+    width: 130px;
+    padding: 20px;
+    position: relative;
+    top: -29em;
+    right: 215px;
+    float: right;
+}
+
+aside h2 {
+    font-weight: 600;
+    font-size: .9em;
+    color: rgb(0, 174, 167);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 22px;
+    text-align: center;
+}
+
+aside img {
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    display: inline-block;
+}
+
+
+
+/* FOOTER AREA */
+
+.footer {
+    background-color: #666666;
+    border-top: 5px solid rgb(0, 174, 167);
+    height: 58px;
+    margin: auto;
+    position: fixed;
+    bottom: 0;
+    width: 960px;
+}
+
+.footer p {
+    text-align: center;
+    color: rgba(255, 255, 255, .5);
+    margin-top: 26px;
+    font-size: 10px;
+}
+
+
+@media only screen and (max-width: 980px) {
+    body {
+        width: 100%;
+    }
+    #navbar {
+        position: relative;
+        left: -78px;
+    }
+    .name {
+        position: relative;
+        left: 80px;
+        width: 152px;
+        padding: 0 10px;
+    }
+
+    /* MAIN CONTENT */
+    .main {
+        overflow: auto;
+        width: 100%;
+    }
+
+    #portfolio {
+        position: relative;
+        left: 80px;
+        width: 255px;
+    }
+
+    ul li {
+        float: left;
+    }
+    #portfolio img {
+        width: 260px;
+        height: 165px;
+    }
+
+
+    #about img {
+        width: inherit;
+        height: 165px;
+        float: none;
+    }
+
+
+    #elon,
+    #personal-web,
+    #google,
+    #original-port {
+        background-color: rgb(0, 174, 167);
+        width: 260px;
+        height: 30px;
+        font-size: 1em;
+        position: relative;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        border-color: #cccccc;
+    }
+
+    /* SIDE BAR/SOCIAL MEDIA */
+    aside {
+        width: 164px;
+        padding: 20px;
+        position: relative;
+        top: -60.3em;
+        left: 26em;
+        float: left;
+    }
+
+    aside img {
+        height: 40px;
+        width: 40px;
+        padding: 10px;
+        float: left;
+        margin-left: 15px;
+    }
+
+
+
+    /* FOOTER AREA */
+    .footer {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 768px) and (min-width: 641px) {
+    body {
+        width: 100%;
+    }
+
+    .clearfix::after {
+        content: “”;
+        display: block;
+        clear: both;
+    }
+
+
+    .name {
+        background-color: rgb(0, 174, 167);
+        width: 195px;
+        height: 70px;
+        position: relative;
+        left: 18px;
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    #navbar {
+        position: relative;
+        left: 0;
+        font-family: Arial;
+        font-size: .8em;
+        color: rgba(255, 255, 255, 0.5);
+        float: right;
+        word-spacing: 2em;
+        padding: 2em;
+    }
+
+    /* MAIN CONTENT */
+    .main {
+        overflow: auto;
+        width: 100%;
+    }
+
+    #portfolio {
+        width: 90%;
+        position: relative;
+        left: 18px;
+    }
+
+    /* SIDE BAR/SOCIAL MEDIA */
+    aside {
+        clear: both;
+        margin-bottom: 100px;
+        height: auto;
+        float: left;
+        width: 90%;
+        padding: 18px;
+        position: relative;
+        top: 60px;
+        left: 18px;
+    }
+
+    aside h2 {
+        margin: 15px;
+    }
+
+
+    span {
+        float: left;
+        font-size: 1.5em;
+        margin-top: -10px;
+    }
+
+
+    aside img {
+        height: 40px;
+        width: 40px;
+        padding: 10px;
+        float: left;
+        margin-left: 15px;
+    }
+}
+
+
+@media screen and (max-width: 640px) and (min-width:0) {
+
+    #navbar {
+        position: relative;
+        top: 85px;
+        left: 10%;
+        float: left;
+        font-family: Arial;
+        font-size: 1.4em;
+        color: rgba(255, 255, 255, 0.5);
+        word-spacing: 2em;
+        padding: 2em;
+        padding-right: 0;
+    }
+
+    .name {
+        background-color: rgb(0, 174, 167);
+        width: 100%;
+        height: 85px;
+        position: relative;
+        top: -115px;
+        left: 0;
+        text-align: center;
+        clear: both;
+    }
+    .name h1 {
+        margin-left: -40px;
+    }
+
+
+    /* MAIN CONTENT */
+    .main {
+        overflow: auto;
+        width: 100%;
+    }
+
+    #portfolio {
+        width: 90%;
+        position: relative;
+        left: 18px;
+    }
+
+    #portfolio h1 {
+        padding: 20px 0;
+        font-size: 2em;
+    }
+
+    #portfolio img {
+        padding: 20px 0;
+        height: auto;
+        width: 100%;
+    }
+
+    #elon,
+    #personal-web,
+    #google,
+    #original-port {
+        background-color: rgb(0, 174, 167);
+        width: 100%;
+        height: 30px;
+        font-size: 1em;
+        position: relative;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        border-color: #cccccc;
+    }
+
+
+    /* SIDE BAR/SOCIAL MEDIA */
+    aside {
+        width: 90%;
+        padding: 18px;
+        margin-bottom: 100px;
+        position: relative;
+        top: 50px;
+        left: 16px;
+        clear: both;
+    }
+
+    aside h2 {
+        margin: 15px;
+    }
+
+
+    span {
+        float: left;
+        font-size: 1.5em;
+        margin-top: -15px;
+    }
+
+    aside img {
+        height: 40px;
+        width: 40px;
+        padding: 10px;
+        float: left;
+        margin-left: 15px;
+    }
+
+
+    /* FOOTER AREA */
+    .footer {
+        width: 100%;
+    }
+}
+ -->
